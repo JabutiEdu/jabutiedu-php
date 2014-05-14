@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'logofont';
+    
+    src: url('../fonts/LoveYaLikeASister.woff') format('woff'),
+         url('../fonts/LoveYaLikeASister.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}

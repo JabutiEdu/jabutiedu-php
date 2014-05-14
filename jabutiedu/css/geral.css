@@ -1,0 +1,222 @@
+@CHARSET "UTF-8";
+
+body
+{
+    background-color: #EEEEEE;
+	font-size:11pt;
+	margin: 12px;
+	min-width:1007px;
+	min-height:880px;
+	font-family:Verdana, Arial, sans-serif;
+	-webkit-text-size-adjust:none;
+}
+
+a {
+	color:#133507;
+}
+
+
+a:HOVER {
+	color:#ffffff;
+}
+
+.main-logo {
+	/* color: #2d5727; */
+	color: #1e4211;
+	font-family: logofont;
+	font-weight: bold;
+	font-size: 34pt;
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+
+.login-painel {
+	
+    border: solid 0px black;
+    
+    background-image: url("../imagens/jaboti.png");
+    position: fixed;
+    
+    left: 50%;
+    top: 30%;
+    
+    
+    z-index: 100;
+
+    height: 538px;
+    margin-top: -175px;
+
+    width: 465px;
+    margin-left: -233px;
+
+}
+
+.login_field{
+	
+	width: 175px;
+	height: 26px;
+	border: 0;
+	padding:4px;
+	font-size: 13pt;
+	color: #888;
+	
+}
+
+.modulo_login_field{
+	
+	width: 183px;
+	height: 30px;
+	border: 0;
+	padding:2px;
+	font-size: 13pt;
+	color: #888;
+	
+}
+
+.login_botao{
+	cursor: pointer;
+	width: 179px;
+	height: 40px;
+	border: solid 3px #5a8e43;
+	font-size: 12pt;
+	background-color: #6aa84f;
+	color: #FFFFFF;
+}
+
+.login_botao:hover {
+	background-color: #4a684f;
+	color: #FFFFFF;
+}
+
+
+h2, h3 {
+	margin: 0;
+
+}
+
+
+.btn_verde {
+	border: 0;
+	background-color: #6aa84f;
+	color: #ffffff;
+	height: 32px;
+	font-size: 14pt;
+	cursor: pointer;
+	margin: 2px;
+	border: solid 3px #5a8e43;
+}
+
+
+select {
+	width: 100%
+	
+	
+}
+
+
+
+
+.btn_verde:hover {
+	
+		color: #777777;
+}
+
+.btn_cinza {
+	border: 0;
+	background-color: #dddddd;
+	color: #000000;
+	height: 32px;
+	font-size: 14pt;
+	cursor: pointer;
+	margin: 2px;
+	border: solid 3px #bbbbbb;
+}
+
+.btn_cinza:hover {
+	
+		color: #777700;
+}
+
+.top_right_button {
+	margin: 4px;
+	cursor: pointer;
+		border: solid 3px #eeeeee;
+}
+
+.top_right_button:hover {
+	border: solid 3px #cccccc;
+}
+
+
+.label_button {
+	cursor: pointer;
+	text-decoration: underline;
+	color:#0000FF;
+	padding: 4px;
+	font-size: 14pt;
+}
+
+.label_button:hover {
+	
+	color:#FF0000;
+}
+
+#cabecalho {
+	border: 0;
+	border-bottom: 1px solid #555555;
+	height: 100px;
+}
+
+#corpo {
+
+	padding-top: 20px;
+
+
+}
+
+.tabela_titulo {
+ 	width: 100%; 
+ 	padding: 8px; 
+ 	text-align: center;
+ 	font-size: 14pt;
+}
+
+
+#logados table{
+	border: 1px solid #CCC;
+	width: 100%;
+	
+}
+
+#logados table tr {
+	background-color: #CCC;
+	
+}
+
+#logados table td {
+	background-color: #CCC;
+	
+}
+
+
+
+
+#cadastrados table{
+	border: 1px solid #CCC;
+	width: 100%;
+	
+}
+
+#cadastrados table tr {
+	background-color: #CCC;
+	
+}
+
+#cadastrados table td {
+	background-color: #CCC;
+	
+}
+
+
