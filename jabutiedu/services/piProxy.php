@@ -12,14 +12,18 @@ $comando = getFieldFromPage('comando');
 
 $comando = "sudo python interpreter.py ".$comando;
 
-exec( $comando );
+$comando = escapeshellcmd($comando);
+
+echo $comando."<br>\n\r";
+
+echo exec( $comando );
 
 $retorno = Array();
 
-$retorno['resultado'] = $comando."<br>\n\r";
+$retorno['resultado'] = "ok";
 
 
-echo json_encode( $retorno );
+//echo json_encode( $retorno );
 
 
 	
