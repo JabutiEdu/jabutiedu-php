@@ -1,5 +1,3 @@
-
-
 var postou = false;
 
 function checkForm(){
@@ -48,7 +46,7 @@ function logout(){
 
 function executa_instrucao( comando ){
 	
-	//alert( comando );
+//	alert( comando );
 	
 	$.ajax({
 		async: true,
@@ -119,10 +117,10 @@ $(document).ready( function(){
 	
 	//------------ LISTENERS BOTOES ----------------
 	
-//	$("#btn_seta_esquerda").click(function(e){
-//		var giro = $("#grau_giro").val();
-//		executa_instrucao("pe "+ giro);
-//	});
+	$("#btn_seta_esquerda").click(function(e){
+		var giro = $("#grau_giro").val();
+		executa_instrucao("pe "+ giro);
+	});
 
 	$("#btn_seta_direita").click(function(e){
 		var giro = $("#grau_giro").val();
@@ -160,7 +158,7 @@ $(document).ready( function(){
 	
 	$("#btn_fala").click(function(e){
 		var texto = $("#texto_fala").val();
-		executa_instrucao("som "+ texto);
+		executa_instrucao("sm "+ texto);
 	});
 
 	
