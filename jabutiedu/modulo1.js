@@ -54,8 +54,8 @@ function executa_instrucao( comando ){
 		url: "services/piProxy.php",
 		dataType: "json",
 		data: {"comando":comando },
-		error: function(result) {
-			alert('ERRO DO SISTEMA: ' + e.responseText);
+		error: function(e) {
+			//alert('ERRO DO SISTEMA: ' + e.responseText);
 			postou = false;	
 		},
 		success: function(result) {
@@ -90,9 +90,11 @@ $(document).ready( function(){
     40 - down
 
 */
+        document.onkeydown = tecla_pressionada
 
 	//refazer essa parada
-	$(document).keypress(function(e) {
+        //parada refeita com sucesso :D
+	function tecla_pressionada(e) {
 		var keyCode= e.keyCode;
 		var charCode= e.charCode;
 
@@ -113,7 +115,7 @@ $(document).ready( function(){
 	  } else if(charCode == 120) {
 		executa_instrucao("ld 1");
 	  } 
-	});
+	}
 	
 	//------------ LISTENERS BOTOES ----------------
 	
