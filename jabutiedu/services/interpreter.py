@@ -35,8 +35,14 @@ def desligar():
     GPIO.cleanup()
 
 message = sys.argv[1]
-timeout = float(sys.argv[2])
-
+try:
+    timeout = float(sys.argv[2])
+except ValueError:
+    saying = " "
+    parsed = sys.argv[2:]
+    for word in parsed:
+        saying = saying + word
+    print saying
 print "executando "
 print message
 print time
@@ -89,7 +95,7 @@ elif message == 'pd':
     timeout = timeout / 100
     time.sleep(timeout)
     parar()
-elif message == 'som':
-    os.system("espeak \"oi, eu sou a jabuti edu\" -v portugal -s140 -p60 -g2 -a100")
-elif message == 'musica':
+elif message == 'sm':
+    os.system('espeak "' + saying + '" -v brazil -s130 -p60 -g2 -a100')
+elif message == 'bu':
     os.system("mpg321 /home/pi/future.mp3")
